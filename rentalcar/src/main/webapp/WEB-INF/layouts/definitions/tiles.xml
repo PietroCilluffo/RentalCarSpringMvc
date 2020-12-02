@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="baseLayout" template="/WEB-INF/layouts/template/base.jsp">
+		<put-attribute name="titolo" value="" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/template/footer.jsp" />
+	</definition>
+	
+	<definition name="Home" extends="baseLayout">
+		<put-attribute name="titolo"  value="Benvenuti in RentalCar" />
+		<put-attribute name="content" value="/WEB-INF/view/home.jsp" />  
+	</definition>
+	
+	<definition name="users" extends="baseLayout">
+		<put-attribute name="titolo"  value="Lista utenti" />
+		<put-attribute name="content" value="/WEB-INF/view/user.jsp" />  
+	</definition>
+	
+	<definition name="addUser" extends="baseLayout">
+		<put-attribute name="titolo"  value="Form aggiunta utenti" />
+		<put-attribute name="content" value="/WEB-INF/view/addUser.jsp" />  
+	</definition>
+	<definition name="handleUser" extends="baseLayout">
+		<put-attribute name="titolo"  value="Gestione utenti" />
+		<put-attribute name="content" value="/WEB-INF/view/handleUser.jsp" />  
+	</definition>
+    	<definition name="parkVehicle" extends="baseLayout">
+		<put-attribute name="titolo"  value="Parco Auto" />
+		<put-attribute name="content" value="/WEB-INF/view/parkVehicle.jsp" />  
+	</definition>
+	
+		
+    	<definition name="addVehicle" extends="baseLayout">
+		<put-attribute name="titolo"  value="Parco Auto" />
+		<put-attribute name="content" value="/WEB-INF/view/addVehicle.jsp" />  
+	</definition>
+		
+    	<definition name="handleVehicle" extends="baseLayout">
+		<put-attribute name="titolo"  value="Parco Auto" />
+		<put-attribute name="content" value="/WEB-INF/view/handleVehicle.jsp" />  
+	</definition>
+	 	<definition name="addReservation" extends="baseLayout">
+		<put-attribute name="titolo"  value="Parco Auto" />
+		<put-attribute name="content" value="/WEB-INF/view/addReservation.jsp" />  
+	</definition>
+		<definition name="handleReservation" extends="baseLayout">
+		<put-attribute name="titolo"  value="Parco Auto" />
+		<put-attribute name="content" value="/WEB-INF/view/handleReservation.jsp" />  
+	</definition>
+</tiles-definitions>
